@@ -1,16 +1,118 @@
-# React + Vite
+# SVS Traders - Inventory & Billing Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Inventory and Billing Management System** built for **SVS Traders** to manage billing, stock, returns, analytics, and inventory efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Dashboard
+- Daily & Monthly Revenue Analytics
+- Inventory Value Overview
+- Pending Credit Bills
+- Return Tracking
+- Revenue Trend Graphs
+- Real-Time Sales Summary
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Billing System
+- Create Bills Quickly
+- Barcode/Product Search
+- Multiple Product Billing
+- Discount Support
+- Payment Methods (Cash/Credit)
+- Auto Inventory Update
+- Invoice Generation
+- Customer Details Management
+- Daily Sales Report
 
-## Expanding the ESLint configuration
+### Inventory Management
+Separate inventory management for:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Jockey Inventory
+- Bevdass Inventory
+- Master SVS Inventory
+
+Features:
+- Product Search
+- Stock Management
+- Quantity Tracking
+- Product Details View
+- Inventory Value Calculation
+
+### Stock Upload
+Upload inventory using Excel files:
+
+- Jockey Excel Upload
+- Bevdass Excel Upload
+- Bulk Product Import
+- Automatic Inventory Update
+
+### Returns Management
+- Return Processing
+- Bill Validation
+- Stock Re-adjustment
+- Return Tracking
+
+### Reports & Analytics
+- Daily Reports
+- Monthly Reports
+- Sales Analytics
+- Brand Performance Tracking
+
+### Authentication
+- Secure Login System
+- Protected Routes
+- Session Management
+- Logout Support
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+
+### Backend / Database
+- Supabase
+
+### Deployment
+- Vercel
+
+---
+
+## Project Structure
+
+```txt
+src/
+│── assets/
+│── components/
+│   ├── billing/
+│   ├── dashboard/
+│   ├── inventory/
+│   ├── reports/
+│   ├── shared/
+│   └── sidebar/
+│
+│── context/
+│   └── ThemeContext.jsx
+│
+│── lib/
+│   └── supabase.js
+│
+│── pages/
+│   ├── inventory/
+│   ├── upload/
+│   ├── Analytics.jsx
+│   ├── Billing.jsx
+│   ├── Dashboard.jsx
+│   ├── Login.jsx
+│   ├── Reports.jsx
+│   ├── Returns.jsx
+│   └── Settings.jsx
+│
+│── App.jsx
+│── App.css
+│── index.css
+│── main.jsx
